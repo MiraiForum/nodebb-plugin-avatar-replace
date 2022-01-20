@@ -1,32 +1,26 @@
 {
-	"id": "nodebb-plugin-quickstart",
-	"url": "https://github.com/NodeBB/nodebb-plugin-quickstart",
-	"library": "./library.js",
-	"hooks": [
-		{
-			"hook": "static:app.load", "method": "init"
-		},
-		{
-			"hook": "static:api.routes", "method": "addRoutes"
-		},
-		{
-			"hook": "filter:admin.header.build", "method": "addAdminNavigation"
-		}
-	],
-	"staticDirs": {
-		"static": "./static"
+  "id": "nodebb-plugin-avatar-replace",
+  "url": "https://github.com/NodeBB/nodebb-plugin-quickstart",
+  "library": "./library.js",
+  "hooks": [
+	{
+	  "hook": "static:app.load",
+	  "method": "init"
 	},
-	"less": [
-		"static/style.less"
-	],
-	"scripts": [
-		"static/lib/main.js"
-	],
-	"acpScripts": [
-		"static/lib/admin.js"
-	],
-	"modules": {
-		"../client/quickstart.js": "./static/lib/quickstart.js"
+	{
+	  "hook": "filter:admin.header.build",
+	  "method": "addAdminNavigation"
 	},
-	"templates": "static/templates"
+	{
+	  "hook": "filter:user.getFields",
+	  "method": "userGetFields"
+	}
+  ],
+  "staticDirs": {
+	"static": "./static"
+  },
+  "acpScripts": [
+	"static/lib/admin.js"
+  ],
+  "templates": "static/templates"
 }

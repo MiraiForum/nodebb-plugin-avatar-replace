@@ -1,11 +1,11 @@
 {
-  "name": "nodebb-plugin-quickstart",
-  "version": "0.4.2",
-  "description": "A starter kit for quickly creating NodeBB plugins",
+  "name": "nodebb-plugin-avatar-replace",
+  "version": "0.0.1",
+  "description": "替换头像链接，提升网站加载速度",
   "main": "library.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/psychobunny/nodebb-plugin-quickstart"
+    "url": ""
   },
   "keywords": [
     "nodebb",
