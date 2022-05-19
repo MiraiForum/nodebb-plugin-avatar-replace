@@ -1,6 +1,6 @@
 {
   "id": "nodebb-plugin-avatar-replace",
-  "url": "https://github.com/NodeBB/nodebb-plugin-quickstart",
+  "url": "https://github.com/MiraiForum/nodebb-plugin-avatar-replace",
   "library": "./library.js",
   "hooks": [
 	{
